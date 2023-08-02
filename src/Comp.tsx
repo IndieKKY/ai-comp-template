@@ -1,5 +1,6 @@
 import React from "react";
 import { FiStar } from "react-icons/fi";
+import Icon from "./Icon";
 
 export interface FeedbackCard {
   title: string;
@@ -47,6 +48,7 @@ const FeedbackCardComp: React.FC<FeedbackCardProps> = ({ data }) => {
         <p className="text-gray-500 dark:text-gray-400">{data.description}</p>
       </div>
       <button className="flex items-center mt-4 text-gray-500 dark:text-gray-400">
+        {/* <Icon name="Star" className="w-4 h-4 mr-1" /> */}
         <FiStar className="w-4 h-4 mr-1" />
         Add to Favorites
       </button>
